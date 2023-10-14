@@ -1,0 +1,38 @@
+div {
+	height: 150px;
+	width: 150px;
+	float: left;
+	text-align: center;
+	margin: 20px;
+	color: black;
+	padding-top: 30px;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+body {
+	text-align: center;
+	margin: auto;
+	background-color: #9cd3c4;
+}
+
+#box1 {
+	border: 5px solid #fff;
+	background-color: red;
+}
+
+#box2 {
+	border: 5px solid #fff;
+	background-color: orange;
+}
+
+#box3 {
+	border: 5px solid #fff;
+	background-color: yellow;
+}
+
+#wrapper {
+	width: 50%;
+	height: 50%;
+	margin: auto;
+}

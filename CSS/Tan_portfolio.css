@@ -1,0 +1,452 @@
+/*font-family: 'Antonio', sans-serif;
+font-family: 'Staatliches', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  background-color: #d3b592;
+  font-family: 'Staatliches', cursive;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#svg {
+  height: 200px;
+}
+
+a {
+  color: black;
+}
+
+
+#projectintro {
+  width: 50%;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
+
+#projectintro h1 {
+  font-size: 60px;
+}
+
+#projectintro p {
+  font-size: 20px;
+}
+
+.animation {
+  position: relative;
+  animation-name: flow;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flow {
+  0% {top: -100px; opacity: 0;}
+  100% {top: 0px; opacity: 1;}
+}
+
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+#viewmywork{
+  width: 250px;
+  height: 60px;
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif
+}
+
+#viewmywork:hover {
+  background-color: #966d3b;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #966c3b;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #d0af84;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffe6ca;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1444px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .circle {
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10px;
+  box-shadow: 5px 10px black;
+}
+
+  #circlewrapper {
+  text-align: center;
+  width: 55%;
+  margin: auto;
+  padding-left: 90px;
+}
+
+
+
+.circle p {
+  position: relative;
+  margin: auto;
+  top: 50px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.circle:hover {
+  background-color: #966d3b;
+}
+/*#lefthalf {
+    text-align: left;
+    width: 80%;
+    padding-left: 100px;
+    padding-right: 100px;
+    float: left;
+    position: relative;
+    font-size: 30px;
+    margin: auto;
+  }*/
+
+
+}
+
+@media screen and (min-width: 1444px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #circlewrapper {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+
+
+
+  .circle {
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 40px;
+  float: left;
+  margin-right: 40px;
+  box-shadow: 5px 10px black;
+}
+
+.circle p {
+  position: relative;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  top: 85px;
+}
+
+.circle:hover {
+  background-color: #966d3b;
+}
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  /*lefthalf {
+  	text-align: left;
+  	width: 45%;
+    float: left;
+  	top: 200px;
+    position: relative;
+  	padding-left: 5%;
+  	font-size: 30px;
+    margin: auto;
+  }
+  .righthalf {
+    text-align: right;
+    width: 45%;
+    height: 1000px;
+    float: right;
+    top: 500px;
+    position: relative;
+    font-size: 30px;
+    margin: auto;
+    padding-left: 50px;
+  }*/
+
+}
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 72em;
+    }
+}
+
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+
+
+
+
+.card {
+  background: white;
+  margin-bottom: 2em; 
+  box-shadow: 5px 10px black;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+.card a:hover {
+  box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+  background-color: #ffe6c9;
+}
+
+.card-content {
+  padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-weight: normal;
+}
+
+.card-content p {
+  font-size: 95%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.ig {
+  width: 29px;
+  height: 29px;
+}
+
+/* Flexbox styles */
+@media screen and (min-width: 40em) {  
+  .cards {
+    margin-top: -1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-bottom: 1em;
+    display: flex;
+    flex: 0 1 calc(50% - 0.5em);
+    /* width: calc(50% - 1em); */
+  }
+} /* mq 40em*/
+
+@media screen and (min-width: 60em) {
+  .cards {
+    margin-top: inherit;
+  }
+  
+  .card {
+    margin-bottom: 2em;
+    display: flex;
+    flex: 0 1 calc(33% - 0.5em);
+    /* width: calc(33% - 1em); */
+  }
+} /* mq 60em*/
+
+
+/**--------------------footer--------------------*/
+
+#footer-pages {
+    position: relative;
+    top: 1000px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: #966d3b;
+    padding: 40px 25px;
+    margin-top: 100px;
+    height: 190px;
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+
+#homepage_footer {
+    margin-top: 100px;
+    padding-top:100px;
+    align-items: center;
+}
+
+.footer_wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 90%;
+    min-height: 195px;
+    flex-direction: row;
+}
+
+.footer_wrapper nav ul li a{
+    margin-top: -5px;
+    color: black;
+    padding-bottom: 100px;
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer_nav nav ul li {
+    list-style-type: none;
+    color: #000;
+    font-family: 'Staatliches', cursive;;
+    font-size: 20px;
+    letter-spacing: .75px;
+    line-height: 26px;
+    text-decoration: none;
+    display: inline;
+    padding: 30px;
+}
+
+.footer_email p {
+    font-family: 'Staatliches', cursive;
+}
+
+.footer_email {
+    width: 440px;
+}
+
+@media only screen and (min-width: 750px)
+.email__signup {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.email__signup {
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+
+button, input {
+    overflow: visible;
+}
+
+input, select, textarea {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    line-height: 24px;
+    max-width: 100%;
+    outline: none;
+}
+
+.input-checkbox, input.text, input[type=button], input[type=email], input[type=submit], input[type=text], textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.footer_social a {
+    margin-left: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+.email__signup input[type=email] {
+    border-bottom: 1px solid #000;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-family: 'Staatliches', cursive;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@media only screen and (min-width: 750px)
+.email__signup input[type=submit] {
+    width: auto;
+}
+.email__signup input[type=submit] {
+    border: 1px solid #000;
+    font-family: 'Staatliches', cursive;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 11px;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    width: 120px;
+    height: 39px;
+    position: relative;
+    bottom: 50px;
+    left: 330px;
+}
+
+.footer_wrapper .h4 {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
